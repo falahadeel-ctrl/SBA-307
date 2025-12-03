@@ -1,0 +1,46 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: violet;
+  }
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+table {
+    border-radius: 20%;
+    border-color: darkgreen;
+    border-width: 4px;
+    border-style: solid;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-wrap: wrap;
+    
+}
+tr, td, th {
+    border-color: lightsalmon;
+    border-width: 3px;
+    border-style: solid;
+    padding: 10px;
+}
+thead, tfoot, tbody {
+   animation: fadeIn 2s;
+}
+thead:hover, tfoot:hover, tbody:hover {
+   animation: pulse 2s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(2); }
+  100% { transform: scale(0.95); }
+}
+
